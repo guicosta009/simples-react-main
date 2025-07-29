@@ -93,7 +93,7 @@ function EmpresaView() {
       <section style={{
         width: '100%',
         minHeight: '340px',
-        background: `linear-gradient(90deg, rgba(33,163,124,0.7) 0%, rgba(46,46,46,0.7) 100%), url('https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=1600&q=80') center/cover`,
+        background: `linear-gradient(90deg, rgba(33,163,124,0.7) 0%, rgba(46,46,46,0.7) 100%), url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1600&q=80') center/cover`,
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
