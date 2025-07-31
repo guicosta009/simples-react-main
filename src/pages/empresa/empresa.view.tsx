@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../../components/Navbar';
 import { colors, fonts } from '../../theme';
 
 const headerTopStyle: React.CSSProperties = {
@@ -58,27 +57,7 @@ const aboutImg: React.CSSProperties = {
   borderRadius: '16px',
   boxShadow: '0 2px 12px 0 rgba(33,163,124,0.10)',
 };
-const footerStyle: React.CSSProperties = {
-  background: colors.graphiteAlt,
-  color: colors.white,
-  fontFamily: fonts.body,
-  padding: '2rem 2rem 1rem 2rem',
-  marginTop: '3rem',
-  borderRadius: '24px 24px 0 0',
-};
-const footerGrid: React.CSSProperties = {
-  display: 'flex',
-  flexWrap: 'wrap',
-  gap: '2rem',
-  justifyContent: 'space-between',
-  alignItems: 'flex-start',
-  maxWidth: 1100,
-  margin: '0 auto',
-};
-const footerCol: React.CSSProperties = {
-  minWidth: 220,
-  flex: 1,
-};
+
 
 function EmpresaView() {
   return (
@@ -87,7 +66,7 @@ function EmpresaView() {
       {/* Barra preta do topo removida */}
       {/* Logo e Navbar */}
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', background: colors.white, borderBottom: `1px solid ${colors.grayLight}` }}>
-        <Navbar />
+
       </div>
       {/* Hero Section */}
       <section style={{
@@ -384,37 +363,6 @@ function EmpresaView() {
           Solicite uma Reunião
         </button>
       </section>
-      {/* Rodapé */}
-      <footer style={footerStyle}>
-        <div style={footerGrid}>
-          <div style={footerCol}>
-            <strong>Contato</strong><br />
-            📞 (11) 4040-4722<br />
-            ✉️ contato@seuescritorio.com.br<br />
-            Av. Exemplo, 1234 - Centro, São Paulo/SP
-          </div>
-          <div style={footerCol}>
-            <strong>Links Úteis</strong><br />
-            <a href="#" style={{ color: colors.white }}>Home</a><br />
-            <a href="#" style={{ color: colors.white }}>O Escritório</a><br />
-            <a href="#" style={{ color: colors.white }}>Equipe</a><br />
-            <a href="#" style={{ color: colors.white }}>Áreas de Atuação</a><br />
-            <a href="#" style={{ color: colors.white }}>Utilitários</a><br />
-            <a href="#" style={{ color: colors.white }}>Contato</a>
-          </div>
-          <div style={footerCol}>
-            <strong>Redes Sociais</strong><br />
-            <a href="#" style={{ color: colors.white }}>Facebook</a><br />
-            <a href="#" style={{ color: colors.white }}>LinkedIn</a><br />
-            <br />
-            <strong>Localização</strong><br />
-            <img src="https://maps.googleapis.com/maps/api/staticmap?center=Av.+Paulista,+SP&zoom=15&size=220x100&key=FAKEKEY" alt="Mapa" style={{ width: '100%', borderRadius: '8px', marginTop: '0.5rem' }} />
-          </div>
-        </div>
-        <div style={{ textAlign: 'center', color: colors.grayLight, marginTop: '2rem', fontSize: '0.95rem' }}>
-          © {new Date().getFullYear()} Seu Escritório. Todos os direitos reservados.
-        </div>
-      </footer>
     </div>
   );
 }
